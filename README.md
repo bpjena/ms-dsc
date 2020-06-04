@@ -1,2 +1,6 @@
 # ms-dsc
-Data Science Master's coursework
+# Binay's coursework items
+# Masters in Data Science
+# Programming
+
+print("Have a good day !!")
