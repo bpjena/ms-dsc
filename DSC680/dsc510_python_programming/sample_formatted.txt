@@ -1,0 +1,13 @@
+Length of the dictionary: 7 
+
+Word                    Count
+
+-----------------------------
+
+mango               	3
+banana              	3
+apple               	3
+pear                	2
+strawberry          	2
+grapes              	1
+kiwi                	1
