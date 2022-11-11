@@ -2,7 +2,7 @@
 name = "deng-jobs"
 version = "0.1.0"
 description = "Data Engineering"
-authors = ["jena-binay <bjena@sumologic.com>"]
+authors = ["jena-binay <binay.bapu@gmail.com>"]
 readme = "README.md"
 packages = [{include = "python"}]
 

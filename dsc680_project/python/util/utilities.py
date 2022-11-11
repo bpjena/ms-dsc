@@ -47,9 +47,8 @@ class Util:
 
         self.hostname = os.popen("hostname -s").read().strip()
         # mail attributes
-        # TO:DO replace email https://sumologic.atlassian.net/servicedesk/customer/portal/5/HELP-17962
-        self.admin_email = "bjena@sumologic.com"
-        self.from_email = "bjena@sumologic.com"
+        self.admin_email = "binay.bapu@gmail.com"
+        self.from_email = "binay.bapu@gmail.com"
         self.html_tbl_cellpadding = "5px"
         self.html_tbl_heading_color = "#CCE0FF"
         self.html_tbl_row_color = "#F7F7F7"
@@ -205,7 +204,7 @@ class Util:
     @staticmethod
     def ret_emailify(curr_email_list: str, email_ids: str) -> str:
         """Given a string of email IDs update any incomplete email addresses (no @ + domain)
-        to be sent to `@sumologic.com` email addresses
+        to be sent to `@gmail.com` email addresses
         """
         if email_ids is None:
             return ""
@@ -220,7 +219,7 @@ class Util:
             if "@" in email_token:
                 final_email_str = final_email_str + "," + email_token
             elif email_token != "":
-                final_email_str = final_email_str + "," + email_token + "@sumologic.com"
+                final_email_str = final_email_str + "," + email_token + "@gmail.com"
         return final_email_str[1:]
 
     def ret_stroflist(self, lst):
@@ -405,5 +404,5 @@ def get_s3():
 #         role=os.environ.get("SNOWFLAKE_ROLE", "AWSADMIN"),
 #         database=os.environ.get("SNOWFLAKE_DATABASE", "TEST_DB"),
 #         warehouse=os.environ.get("SNOWFLAKE_WAREHOUSE", "XS_WH"),
-#         account=os.environ.get("SNOWFLAKE_ACCOUNT", "SUMOLOGIC"),
+#         account=os.environ.get("SNOWFLAKE_ACCOUNT", "BINAYPERSONAL"),
 #     )

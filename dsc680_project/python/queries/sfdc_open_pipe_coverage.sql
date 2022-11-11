@@ -72,10 +72,10 @@ SELECT
 FROM sfdc.pipeline oprt
 JOIN ab_sfdc.recordtype r     ON r.id = oprt.recordtypeid
 JOIN ab_sfdc.account a        ON a.case_safe_account_id__c = oprt.accountid
-JOIN audit.sumo_calendar sc   ON oprt.closedate = sc.date
-JOIN audit.sumo_calendar sc2  ON oprt.createddate::date = sc2.date
+JOIN audit.calendar sc   ON oprt.closedate = sc.date
+JOIN audit.calendar sc2  ON oprt.createddate::date = sc2.date
 JOIN weekly_schedule_date wsd ON oprt.snap_date = wsd.snap_date
-JOIN audit.sumo_calendar sc3  ON oprt.snap_date = sc3.date
+JOIN audit.calendar sc3  ON oprt.snap_date = sc3.date
 WHERE 1=1
 	--and oprt.snap_date = '2022-10-22'
     AND SUBSTRING(oprt.stagename,1,1) != 'C' --closed stage filter out
@@ -109,7 +109,7 @@ SELECT
     , opl.close_date
     , CURRENT_TIMESTAMP AS dw_load_dt
 FROM sfdc_op_history opl
-JOIN audit.sumo_calendar sc ON opl.close_date = sc."date"
+JOIN audit.calendar sc ON opl.close_date = sc."date"
 WHERE opl."type" IN ('New','New Logo','Cross-Sell','Upgrade')
 ),
 
