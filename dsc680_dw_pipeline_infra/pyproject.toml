@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "deng-jobs"
+version = "0.1.0"
+description = "Data Engineering"
+authors = ["jena-binay <binay.bapu@gmail.com>"]
+readme = "README.md"
+packages = [{include = "python"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^1.5.0"
+boto3 = "^1.24.86"
+numpy = "^1.23.3"
+jsonschema = "^4.16.0"
+click = "^8.1.3"
+botocore = "^1.27.86"
+redshift-connector = "^2.0.909"
+SQLAlchemy = "^1.4.41"
+Jinja2 = "^3.1.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.8.0"
+isort = "^5.10.1"
+flake8 = "^5.0.4"
+pytest = "^7.1.3"
+pytest-mock = "^3.9.0"
+moto = "^4.0.6"
+pre-commit = "^2.20.0"
+mypy = "^0.982"
+pytest-cov = "^4.0.0"
+pytest-freezegun = "^0.4.2"
+sqlfluff = "^1.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
