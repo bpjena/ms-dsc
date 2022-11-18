@@ -6,8 +6,8 @@
     ~ methodologies adopted
         - exploratory data analysis
             * distributions
-            * box plaots
-            * scatter plaots
+            * box plots
+            * scatter plots
             * heat maps
         - T-test
         - Regression Analysis
