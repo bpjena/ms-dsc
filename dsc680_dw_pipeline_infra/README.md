@@ -1,3 +1,7 @@
+
+`STARTING INSTRUCTIONS` 
+- Follow workings and details [here](https://github.com/bpjena/ms-dsc/blob/master/dsc680_dw_pipeline_infra/DSC680_8.2_Week8_Milestone_3_Workings_Report_Binay%20Jena.pdf)
+
 ## deng-jobs local setup (Mac)  
 
 Pre-Requisites :
